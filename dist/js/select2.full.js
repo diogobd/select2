@@ -3316,7 +3316,8 @@ S2.define('select2/data/array',[
       if (item.children) {
         var $children = this.convertToOptions(item.children);
 
-        Utils.appendMany($option, $children);
+        //Utils.appendMany($option, $children);
+        $options.push($children);
       }
 
       $options.push($option);
